@@ -19,7 +19,8 @@ public static void main(String[] args) {
         map.put(6, "Seattle");
 
 
-
+        for(HashMap.Entry < Integer, String > values : map.entrySet())
+                System.out.println(values.getKey() +", " +values.getValue());
     }
 
 }
