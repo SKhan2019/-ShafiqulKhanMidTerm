@@ -1,6 +1,6 @@
 package string.problems;
 
-import java.util.ArraySorter;
+import java.util.*;
 
 /**
  * Created by mrahman on 04/22/17.
@@ -21,8 +21,8 @@ import java.util.ArraySorter;
 
         char[] chr1 = str1.toLowerCase().toCharArray();
         char[] chr2 = str2.toLowerCase().toCharArray();
-        ArraySorter.sort(chr1);
-        ArraySorter.sort(chr2);
+        Arrays.sort(chr1);
+        Arrays.sort(chr2);
 
         for (int i = 0; i < chr1.length; i++) {
             if (chr1[i] != chr2[i]) {
@@ -34,8 +34,8 @@ import java.util.ArraySorter;
 
     public static void main(String[] args) {
 
-        String str1 = "ACT";
-        String str2 = "CAT";
+        String str1 = "ARMY";
+        String str2 = "MARY";
         if (checkAnagram(str1, str2)) {
             System.out.print(str1 + " and " + str2 + " is anagram");
         } else {

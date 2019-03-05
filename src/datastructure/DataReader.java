@@ -19,7 +19,7 @@ public class DataReader {
 		String store = "";
 
 		try {
-			fr = new FileReader("/Users/prodipbhowmik/ideaprojects/midterm/data.txt");
+			fr = new FileReader("/Users/nigarsultana/downloads/text.txt");
 
 
 		} catch (Exception e) {
